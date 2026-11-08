@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase | Premium Online Store</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="e-commerce-style.css" />
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <i class="fas fa-gift"></i> Summer Sale is LIVE — Up to 50% OFF + Free
+        Shipping over $50!
+      </div>
+    </div>
+
+    <header id="header">
+      <div class="container nav">
+        <a href="#" class="logo"
+          ><div class="logo-icon"><i class="fas fa-shopping-bag"></i></div>
+          ShopEase</a
+        >
+        <div class="search-box">
+          <input
+            type="text"
+            placeholder="Search products..."
+            id="searchInput"
+          />
+          <i class="fas fa-search"></i>
+        </div>
+        <div class="nav-icons">
+          <a href="#" title="Wishlist" aria-label="Wishlist"
+            ><i class="fas fa-heart"></i
+          ></a>
+          <a href="#" id="cartIcon" title="Cart" aria-label="Cart"
+            ><i class="fas fa-shopping-cart"></i
+            ><span class="cart-count" id="cartCount">0</span></a
+          >
+          <a href="#" title="Account" aria-label="Account"
+            ><i class="fas fa-user"></i
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <div class="tag"><i class="fas fa-fire"></i> Limited Time Offer</div>
+          <h1>Summer Sale is Live! 🌞</h1>
+          <p>
+            Up to 50% off on selected items. Discover premium products at
+            unbeatable prices — limited time only.
+          </p>
+          <div class="hero-btns">
+            <a href="#products" class="hero-btn hero-btn-white"
+              >Shop Now <i class="fas fa-arrow-right"></i
+            ></a>
+            <a href="#products" class="hero-btn hero-btn-ghost"
+              ><i class="fas fa-tag"></i> View Deals</a
+            >
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="circle"><i class="fas fa-shopping-bag"></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feat-bar">
+      <div class="container feat-bar-grid">
+        <div class="feat-item">
+          <i class="fas fa-truck-fast"></i>
+          <div>
+            <h4>Free Shipping</h4>
+            <p>On orders over $50</p>
+          </div>
+        </div>
+        <div class="feat-item">
+          <i class="fas fa-rotate-left"></i>
+          <div>
+            <h4>Easy Returns</h4>
+            <p>30-day return policy</p>
+          </div>
+        </div>
+        <div class="feat-item">
+          <i class="fas fa-shield-halved"></i>
+          <div>
+            <h4>Secure Payment</h4>
+            <p>100% protected</p>
+          </div>
+        </div>
+        <div class="feat-item">
+          <i class="fas fa-headset"></i>
+          <div>
+            <h4>24/7 Support</h4>
+            <p>We're always here</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Featured <span>Products</span></h2>
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="electronics">
+              Electronics
+            </button>
+            <button class="filter-btn" data-filter="fashion">Fashion</button>
+            <button class="filter-btn" data-filter="accessories">
+              Accessories
+            </button>
+          </div>
+        </div>
+        <div class="products" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section class="newsletter reveal">
+      <div class="container">
+        <h2>
+          Get <span style="color: #0ea5e9">10% Off</span> Your First Order
+        </h2>
+        <p>
+          Subscribe to our newsletter and receive exclusive deals and updates.
+        </p>
+        <form
+          class="nl-form"
+          onsubmit="
+            event.preventDefault();
+            showToast('Subscribed successfully! 🎉');
+            this.reset();
+          "
+        >
+          <input type="email" placeholder="Enter your email address" required />
+          <button type="submit">
+            Subscribe <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <a href="#" class="logo" style="color: #fff; margin-bottom: 12px"
+            ><div class="logo-icon"><i class="fas fa-shopping-bag"></i></div>
+            ShopEase</a
+          >
+          <p>
+            Your one-stop shop for premium products at unbeatable prices.
+            Quality guaranteed.
+          </p>
+          <div class="socials">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Sellers</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><i class="fas fa-envelope"></i> hello@shopease.com</li>
+            <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+            <li><i class="fas fa-location-dot"></i> New York, USA</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        © 2025 ShopEase. All rights reserved. | Built with ❤️ by Waliullah
+      </div>
+    </footer>
+
+    <div class="toast" id="toast">
+      <i class="fas fa-check-circle"></i>
+      <span id="toastMsg">Added to cart!</span>
+    </div>
+
+    <script src="e-commerce-script.js"></script>
+  </body>
+</html>
